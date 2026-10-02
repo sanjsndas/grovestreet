@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About · Grove Street Architecture</title>
+  <meta name="description" content="About Grove Street Architecture — independent editorial on interior design, architecture, and the built environment. Meet our team and learn our story.">
+  <link rel="canonical" href="https://grovestreetarchitecture.com/about.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="About · Grove Street Architecture">
+  <meta property="og:description" content="Independent editorial on interior design, architecture, and the built environment. Meet our team and learn our story.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://grovestreetarchitecture.com/about.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Grove Street Architecture",
+    "url": "https://grovestreetarchitecture.com/about.html",
+    "description": "Independent editorial on interior design, architecture, and the built environment.",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Grove Street Architecture",
+      "foundingDate": "2019",
+      "founders": [
+        { "@type": "Person", "name": "Elena Marchetti" },
+        { "@type": "Person", "name": "James Okonkwo" },
+        { "@type": "Person", "name": "Clara Lindqvist" }
+      ]
+    }
+  }
+  </script>
+  <style>
+    /* ---------- RESET & VARIABLES ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #faf9f7;
+      --surface: #ffffff;
+      --ink: #1e1e1e;
+      --ink-soft: #3d3d3d;
+      --muted: #6b6b6b;
+      --border: #e2e0dc;
+      --accent: #b45f3b;      /* terracotta */
+      --accent-soft: #f0e6e1;
+      --serif: 'Georgia', 'Times New Roman', Times, serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1280px;
+      --content-width: 720px;
+      --radius: 4px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.6rem;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      margin: 2.2rem 0 1rem;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      margin: 1.8rem 0 0.6rem;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      color: var(--ink-soft);
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(6px);
+      background: rgba(255,255,255,0.92);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+
+    .logo span {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-left: 8px;
+    }
+
+    .logo .dot {
+      color: var(--accent);
+      font-size: 1.8rem;
+      line-height: 0;
+      margin-left: 2px;
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 28px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--ink-soft);
+    }
+
+    .main-nav a {
+      color: var(--ink-soft);
+      padding: 4px 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      font-size: 1.4rem;
+      padding: 6px 12px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      color: var(--ink);
+    }
+
+    /* ---------- ABOUT PAGE SPECIFIC ---------- */
+    .about-hero {
+      padding: 60px 0 40px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .about-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 16px;
+    }
+
+    .about-hero p {
+      font-size: 1.2rem;
+      max-width: 680px;
+      margin: 0 auto;
+      color: var(--ink-soft);
+    }
+
+    .about-content {
+      max-width: var(--content-width);
+      margin: 0 auto;
+      padding-bottom: 40px;
+    }
+
+    .about-content img {
+      width: 100%;
+      height: auto;
+      border-radius: var(--radius);
+      margin: 28px 0;
+      background: var(--border);
+    }
+
+    .about-content blockquote {
+      border-left: 3px solid var(--accent);
+      padding-left: 22px;
+      margin: 28px 0;
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      color: var(--ink);
+      font-style: italic;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin: 32px 0 48px;
+    }
+
+    .team-member {
+      text-align: center;
+    }
+
+    .team-member img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 16px;
+      background: var(--border);
+    }
+
+    .team-member h3 {
+      font-size: 1.2rem;
+      margin: 0 0 4px;
+    }
+
+    .team-member .role {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .team-member p {
+      font-size: 0.92rem;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+      margin: 28px 0 40px;
+    }
+
+    .value-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 22px;
+    }
+
+    .value-item h3 {
+      font-family: var(--sans);
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--ink);
+      margin: 0 0 10px;
+    }
+
+    .value-item p {
+      font-size: 0.92rem;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .info-section {
+      border-top: 1px solid var(--border);
+      padding: 48px 0 36px;
+      margin-top: 20px;
+    }
+
+    .info-section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 18px;
+    }
+
+    .info-section p,
+    .info-section li {
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+      margin-bottom: 12px;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: var(--ink);
+      color: #d4d4d4;
+      padding: 48px 0 28px;
+      margin-top: 40px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 36px;
+    }
+
+    .footer-grid h4 {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #fff;
+      margin-bottom: 18px;
+    }
+
+    .footer-grid p {
+      font-size: 0.88rem;
+      color: #b0b0b0;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .footer-grid ul {
+      list-style: none;
+    }
+
+    .footer-grid li {
+      margin-bottom: 10px;
+    }
+
+    .footer-grid a {
+      color: #b0b0b0;
+      font-size: 0.88rem;
+    }
+
+    .footer-grid a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #333;
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.78rem;
+      color: #888;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .about-hero h1 {
+        font-size: 2.4rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      .main-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--surface);
+        padding: 20px 24px;
+        border-bottom: 1px solid var(--border);
+        gap: 16px;
+      }
+      .main-nav.open { display: flex; }
+      .menu-toggle { display: block; }
+      .header-inner { position: relative; }
+      .about-hero h1 { font-size: 2rem; }
+      .about-hero p { font-size: 1rem; }
+      .team-grid { grid-template-columns: 1fr; }
+      .values-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 0 16px; }
+      .about-hero { padding: 40px 0 28px; }
+    }
+
+    /* ---------- UTILITIES ---------- */
+    .hidden { display: none !important; }
+    .text-center { text-align: center; }
+  </style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      Grove Street <span>Architecture</span><span class="dot">.</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html">Terms Of Privacy</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="cookies.html">Cookies Policy</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+      <li><a href="categories.html">Categories</a></li>
+    </nav>
+  </div>
+</header>
+
+<!-- ========== MAIN CONTENT ========== -->
+<main class="container">
+
+  <!-- About Hero -->
+  <section class="about-hero">
+    <h1>About Grove Street</h1>
+    <p>An independent editorial voice on interior design, architecture, and the art of living well — published since 2019.</p>
+  </section>
+
+  <!-- About Content -->
+  <div class="about-content">
+
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=600&fit=crop" alt="Minimalist interior with concrete wall, oak floor, and linen sofa — a representation of material honesty">
+
+    <h2>Our Story</h2>
+    <p>Grove Street Architecture began in a small London studio in 2019, founded by three architects and designers who were tired of the glossy, disposable approach that dominated design media. We wanted to create a publication that treated architecture and interiors with the seriousness they deserve — but without the jargon, the elitism, or the endless parade of trend pieces.</p>
+
+    <p>What started as a newsletter shared among friends has grown into an independent journal read by architects, designers, and curious homeowners across the world. We remain proudly independent: no sponsored content, no hidden advertising, no pay-to-play reviews. Every article is written by our editorial team and published because we believe it matters.</p>
+
+    <blockquote>“The most beautiful rooms are those where the materials have been allowed to speak for themselves.” — Elena Marchetti, Editor-in-Chief</blockquote>
+
+    <h2>What We Stand For</h2>
+
+    <div class="values-grid">
+      <div class="value-item">
+        <h3>Material Honesty</h3>
+        <p>We believe in celebrating raw, unprocessed materials that age gracefully and tell the story of their making — from concrete to unlacquered brass to untreated timber.</p>
+      </div>
+      <div class="value-item">
+        <h3>Independent Voice</h3>
+        <p>We are not beholden to advertisers, brands, or trends. Our only loyalty is to our readers and to the truth about what makes good design.</p>
+      </div>
+      <div class="value-item">
+        <h3>Sustainability First</h3>
+        <p>Environmental responsibility is not a trend — it is a necessity. We champion low-impact materials, passive design, and adaptive reuse.</p>
+      </div>
+      <div class="value-item">
+        <h3>Human-Centred</h3>
+        <p>Design is ultimately about people. We explore how spaces shape our wellbeing, our relationships, and our daily lives.</p>
+      </div>
+    </div>
+
+    <h2>Our Team</h2>
+    <p>We are a small, dedicated team of architects, designers, and writers based across Europe and North America. Meet the people behind the publication.</p>
+
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face" alt="Portrait of Elena Marchetti">
+        <h3>Elena Marchetti</h3>
+        <div class="role">Editor-in-Chief</div>
+        <p>Architect and writer based in Milan. Over fifteen years of experience in residential and adaptive reuse projects.</p>
+      </div>
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" alt="Portrait of James Okonkwo">
+        <h3>James Okonkwo</h3>
+        <div class="role">Senior Editor, Architecture</div>
+        <p>Critic and historian whose writing has appeared in international design journals. Based in New York.</p>
+      </div>
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face" alt="Portrait of Clara Lindqvist">
+        <h3>Clara Lindqvist</h3>
+        <div class="role">Editor, Interiors & Materials</div>
+        <p>Stockholm-based interior designer specialising in sustainable materials and Nordic light.</p>
+      </div>
+    </div>
+
+    <h2>Our Editorial Process</h2>
+    <p>Every article we publish goes through a rigorous editorial process. We do not accept guest posts or sponsored content. Our writers are paid for their work, and our reviews are never influenced by brands or PR agencies. If we recommend a product or material, it is because we genuinely believe it is worth your attention.</p>
+
+    <p>We fact-check all claims, credit our sources, and correct errors promptly and transparently. If you spot something that needs fixing, please <a href="contact.html">let us know</a>.</p>
+
+    <h2>Recognition</h2>
+    <p>Our work has been featured in design publications across Europe and North America. In 2023, we were shortlisted for the Independent Publishing Award for Best Design Journal. But our proudest achievement is the community of readers who write to us with questions, disagreements, and their own stories of building and living in thoughtful spaces.</p>
+
+    <h2>Get in Touch</h2>
+    <p>We welcome pitches, feedback, and reader questions. Please write to us at <a href="mailto:hello@grovestreetarchitecture.com">hello@grovestreetarchitecture.com</a>. For advertising and partnerships, contact <a href="mailto:partners@grovestreetarchitecture.com">partners@grovestreetarchitecture.com</a>.</p>
+
+    <p>Our editorial office is at Grove Street, London, but our writers are based across Europe and North America.</p>
+
+  </div>
+
+  <!-- Newsletter (reused from homepage style) -->
+  <section class="info-section" style="border-top: 1px solid var(--border); padding: 48px 0 36px; max-width: var(--content-width); margin: 0 auto;">
+    <h2 style="font-size: 1.6rem; margin-bottom: 18px;">Stay in Touch</h2>
+    <p style="font-size: 0.95rem; color: var(--ink-soft); margin-bottom: 16px;">Subscribe to The Grove Street Dispatch — independent design writing, delivered every other Sunday.</p>
+    <form id="aboutNewsletterForm" style="display: flex; gap: 10px; max-width: 440px;">
+      <input type="email" placeholder="your@email.com" required aria-label="Email address" style="flex:1; padding:12px 16px; border:1px solid var(--border); border-radius:var(--radius); font-family:var(--sans); font-size:0.95rem; outline:none; background:var(--bg);">
+      <button type="submit" style="padding:12px 24px; background:var(--ink); color:#fff; border:none; border-radius:var(--radius); font-family:var(--sans); font-size:0.85rem; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; cursor:pointer;">Subscribe</button>
+    </form>
+    <p id="aboutNewsletterMsg" style="margin-top:12px; font-size:0.85rem; color:var(--accent);"></p>
+  </section>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Grove Street Architecture</h4>
+        <p>Independent editorial on interior design, architecture, and the art of living well. Published since 2019.</p>
+        <p style="margin-top:16px; font-size:0.78rem; color:#777;">© 2025 Grove Street Architecture. All rights reserved.</p>
+      </div>
+      <div>
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="index.html">Interior Design</a></li>
+          <li><a href="index.html">Architecture</a></li>
+          <li><a href="index.html">Materials</a></li>
+          <li><a href="index.html">Lighting</a></li>
+          <li><a href="index.html">Modern Homes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Information</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Made with care in London.</span>
+      <span>ISSN 2634-912X</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script>
+  (function() {
+    'use strict';
+
+    // ---------- MOBILE MENU ----------
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+    menuToggle.addEventListener('click', function() {
+      mainNav.classList.toggle('open');
+    });
+
+    // Close menu when a nav link is clicked
+    mainNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('open');
+      });
+    });
+
+    // ---------- NEWSLETTER FORM ----------
+    const form = document.getElementById('aboutNewsletterForm');
+    const msg = document.getElementById('aboutNewsletterMsg');
+
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = this.querySelector('input[type="email"]').value.trim();
+        if (email) {
+          msg.textContent = 'Thank you — you are subscribed to The Grove Street Dispatch.';
+          this.reset();
+          setTimeout(() => { msg.textContent = ''; }, 5000);
+        }
+      });
+    }
+
+    // ---------- SMOOTH SCROLL FOR HASH LINKS (if any) ----------
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const targetEl = document.querySelector(targetId);
+        if (targetEl) {
+          e.preventDefault();
+          targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact · Grove Street Architecture</title>
+  <meta name="description" content="Get in touch with Grove Street Architecture — editorial, advertising, and reader inquiries. Independent design writing since 2019.">
+  <link rel="canonical" href="https://grovestreetarchitecture.com/contact.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact · Grove Street Architecture">
+  <meta property="og:description" content="We welcome pitches, feedback, and reader questions. Reach the editorial team.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://grovestreetarchitecture.com/contact.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Grove Street Architecture",
+    "url": "https://grovestreetarchitecture.com/contact.html",
+    "description": "Contact the editorial team at Grove Street Architecture.",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Grove Street Architecture",
+      "email": "hello@grovestreetarchitecture.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "London",
+        "addressCountry": "UK"
+      }
+    }
+  }
+  </script>
+  <style>
+    /* ---------- RESET & VARIABLES (identical to main site) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #faf9f7;
+      --surface: #ffffff;
+      --ink: #1e1e1e;
+      --ink-soft: #3d3d3d;
+      --muted: #6b6b6b;
+      --border: #e2e0dc;
+      --accent: #b45f3b;      /* terracotta */
+      --accent-soft: #f0e6e1;
+      --serif: 'Georgia', 'Times New Roman', Times, serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1280px;
+      --content-width: 720px;
+      --radius: 4px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.6rem;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      margin: 2.2rem 0 1rem;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      margin: 1.8rem 0 0.6rem;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      color: var(--ink-soft);
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ---------- HEADER (identical to main site) ---------- */
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(6px);
+      background: rgba(255,255,255,0.92);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+
+    .logo span {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-left: 8px;
+    }
+
+    .logo .dot {
+      color: var(--accent);
+      font-size: 1.8rem;
+      line-height: 0;
+      margin-left: 2px;
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 28px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--ink-soft);
+    }
+
+    .main-nav a {
+      color: var(--ink-soft);
+      padding: 4px 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      font-size: 1.4rem;
+      padding: 6px 12px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      color: var(--ink);
+    }
+
+    /* ---------- SEARCH BAR (same as main) ---------- */
+    .search-section {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+
+    .search-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      max-width: 560px;
+    }
+
+    .search-wrap input {
+      flex: 1;
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-family: var(--sans);
+      font-size: 0.95rem;
+      background: var(--bg);
+      color: var(--ink);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    .search-wrap input:focus {
+      border-color: var(--accent);
+    }
+
+    .search-wrap button {
+      padding: 12px 22px;
+      background: var(--ink);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius);
+      font-family: var(--sans);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .search-wrap button:hover {
+      background: var(--accent);
+    }
+
+    /* ---------- CONTACT PAGE SPECIFIC ---------- */
+    .contact-page {
+      max-width: var(--content-width);
+      margin: 0 auto;
+      padding: 48px 0 60px;
+    }
+
+    .contact-page h1 {
+      font-size: 2.6rem;
+      margin-bottom: 8px;
+    }
+
+    .contact-page .subhead {
+      font-size: 1.15rem;
+      color: var(--muted);
+      margin-bottom: 36px;
+      font-family: var(--sans);
+      line-height: 1.5;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      margin-top: 8px;
+    }
+
+    .contact-info h2 {
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin: 0 0 22px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+    }
+
+    .contact-info p {
+      font-size: 0.98rem;
+      margin-bottom: 18px;
+    }
+
+    .contact-info strong {
+      color: var(--ink);
+      font-weight: 600;
+      display: block;
+      font-size: 0.92rem;
+      margin-bottom: 2px;
+    }
+
+    .contact-info a {
+      color: var(--accent);
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    .contact-info a:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    .contact-info .address {
+      font-style: normal;
+      color: var(--ink-soft);
+      line-height: 1.6;
+      margin-bottom: 22px;
+    }
+
+    /* ---------- CONTACT FORM ---------- */
+    .contact-form-wrap {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+    }
+
+    .contact-form-wrap h2 {
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin: 0 0 24px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--ink-soft);
+      margin-bottom: 6px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-family: var(--sans);
+      font-size: 0.95rem;
+      background: var(--bg);
+      color: var(--ink);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--accent);
+    }
+
+    .form-group textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .form-group select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%236b6b6b' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      background-size: 12px;
+    }
+
+    .form-submit {
+      width: 100%;
+      padding: 14px 24px;
+      background: var(--ink);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius);
+      font-family: var(--sans);
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      transition: background 0.15s;
+      margin-top: 6px;
+    }
+
+    .form-submit:hover {
+      background: var(--accent);
+    }
+
+    .form-message {
+      margin-top: 16px;
+      font-size: 0.9rem;
+      color: var(--accent);
+      min-height: 1.4em;
+    }
+
+    /* ---------- ADDITIONAL INFO ---------- */
+    .contact-extra {
+      margin-top: 48px;
+      border-top: 1px solid var(--border);
+      padding-top: 40px;
+    }
+
+    .contact-extra h2 {
+      font-size: 1.6rem;
+      margin-bottom: 18px;
+    }
+
+    .contact-extra p {
+      font-size: 0.98rem;
+      margin-bottom: 14px;
+    }
+
+    .contact-extra ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .contact-extra li {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+    }
+
+    .contact-extra li strong {
+      color: var(--ink);
+      font-weight: 600;
+      display: inline-block;
+      min-width: 180px;
+    }
+
+    /* ---------- FOOTER (same as main) ---------- */
+    .site-footer {
+      background: var(--ink);
+      color: #d4d4d4;
+      padding: 48px 0 28px;
+      margin-top: 40px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 36px;
+    }
+
+    .footer-grid h4 {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #fff;
+      margin-bottom: 18px;
+    }
+
+    .footer-grid p {
+      font-size: 0.88rem;
+      color: #b0b0b0;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .footer-grid ul {
+      list-style: none;
+    }
+
+    .footer-grid li {
+      margin-bottom: 10px;
+    }
+
+    .footer-grid a {
+      color: #b0b0b0;
+      font-size: 0.88rem;
+    }
+
+    .footer-grid a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #333;
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.78rem;
+      color: #888;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      .contact-page h1 { font-size: 2rem; }
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+      .main-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--surface);
+        padding: 20px 24px;
+        border-bottom: 1px solid var(--border);
+        gap: 16px;
+      }
+      .main-nav.open { display: flex; }
+      .menu-toggle { display: block; }
+      .header-inner { position: relative; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .search-wrap { flex-direction: column; align-items: stretch; }
+      .contact-form-wrap { padding: 24px 20px; }
+      .contact-extra li strong { min-width: 100%; display: block; margin-bottom: 2px; }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 0 16px; }
+      .contact-form-wrap { padding: 20px 16px; }
+    }
+
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      Grove Street <span>Architecture</span><span class="dot">.</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="terms.html">Terms Of Privacy</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="cookies.html">Cookies Policy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="categories.html">Categories</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ========== SEARCH (consistent with main) ========== -->
+<div class="search-section">
+  <div class="container">
+    <div class="search-wrap">
+      <input type="text" id="searchInput" placeholder="Search articles, topics, guides…" aria-label="Search articles">
+      <button id="searchBtn">Search</button>
+    </div>
+  </div>
+</div>
+
+<!-- ========== CONTACT MAIN ========== -->
+<main class="container" id="contact">
+  <div class="contact-page">
+
+    <h1>Contact</h1>
+    <p class="subhead">We welcome pitches, feedback, and reader questions. Whether you're an architect, designer, or simply curious about the built world, we'd love to hear from you.</p>
+
+    <div class="contact-grid">
+      <!-- Left: info -->
+      <div class="contact-info">
+        <h2>Editorial & General</h2>
+        <p>
+          <strong>Email</strong>
+          <a href="mailto:hello@grovestreetarchitecture.com">hello@grovestreetarchitecture.com</a>
+        </p>
+        <p>
+          <strong>Pitches & submissions</strong>
+          <a href="mailto:editorial@grovestreetarchitecture.com">editorial@grovestreetarchitecture.com</a>
+        </p>
+        <p>
+          <strong>Advertising & partnerships</strong>
+          <a href="mailto:partners@grovestreetarchitecture.com">partners@grovestreetarchitecture.com</a>
+        </p>
+        <p>
+          <strong>Studio (postal)</strong>
+          <span class="address">
+            Grove Street Architecture<br>
+            12 Grove Street<br>
+            London, E15 1AB<br>
+            United Kingdom
+          </span>
+        </p>
+        <p style="font-size:0.9rem; color:var(--muted); margin-top:24px;">
+          We aim to respond to all inquiries within two working days. For urgent press requests, please mark your subject line as <em>URGENT</em>.
+        </p>
+      </div>
+
+      <!-- Right: form -->
+      <div class="contact-form-wrap">
+        <h2>Send a message</h2>
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="general">General inquiry</option>
+              <option value="pitch">Article pitch</option>
+              <option value="advertising">Advertising / partnership</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us what's on your mind…" required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send message</button>
+          <div class="form-message" id="formMessage"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Additional FAQ / notes -->
+    <div class="contact-extra">
+      <h2>Before you write</h2>
+      <p>To help us route your message quickly, please note the following:</p>
+      <ul>
+        <li><strong>Pitches:</strong> Include a short summary (150 words max), your intended angle, and 2–3 relevant writing samples. We publish both emerging and established voices.</li>
+        <li><strong>Reader questions:</strong> If you have a specific design dilemma, include a photo or a brief description of the space. We may feature your question in our “Ask the Editor” column.</li>
+        <li><strong>Advertising:</strong> We work with a small number of carefully selected partners. Please include your brand, timeline, and budget range.</li>
+        <li><strong>Permissions:</strong> For reprints or syndication, please specify the article title and intended use. Allow 3–5 business days for a response.</li>
+      </ul>
+    </div>
+
+  </div>
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Grove Street Architecture</h4>
+        <p>Independent editorial on interior design, architecture, and the art of living well. Published since 2019.</p>
+        <p style="margin-top:16px; font-size:0.78rem; color:#777;">© 2025 Grove Street Architecture. All rights reserved.</p>
+      </div>
+      <div>
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="index.html#interior-design">Interior Design</a></li>
+          <li><a href="index.html#architecture">Architecture</a></li>
+          <li><a href="index.html#materials">Materials</a></li>
+          <li><a href="index.html#lighting">Lighting</a></li>
+          <li><a href="index.html#modern-homes">Modern Homes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Information</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Made with care in London.</span>
+      <span>ISSN 2634-912X</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script>
+  (function() {
+    'use strict';
+
+    // ---------- MOBILE MENU ----------
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+    menuToggle.addEventListener('click', function() {
+      mainNav.classList.toggle('open');
+    });
+
+    mainNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('open');
+      });
+    });
+
+    // ---------- CONTACT FORM ----------
+    const contactForm = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value.trim();
+
+        // Basic validation
+        if (!name || !email || !message) {
+          formMessage.textContent = 'Please fill in all required fields (name, email, message).';
+          formMessage.style.color = '#b45f3b';
+          return;
+        }
+
+        if (!email.includes('@') || !email.includes('.')) {
+          formMessage.textContent = 'Please enter a valid email address.';
+          formMessage.style.color = '#b45f3b';
+          return;
+        }
+
+        // Simulate successful submission
+        formMessage.textContent = 'Thank you, ' + name + '. Your message has been sent — we\'ll be in touch soon.';
+        formMessage.style.color = '#b45f3b';
+        contactForm.reset();
+
+        setTimeout(() => {
+          formMessage.textContent = '';
+        }, 6000);
+      });
+    }
+
+    // ---------- SEARCH (basic redirect to home with query) ----------
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+
+    function performSearch() {
+      const query = searchInput.value.trim();
+      if (query) {
+        // Redirect to home page with search query
+        window.location.href = 'index.html?search=' + encodeURIComponent(query);
+      } else {
+        window.location.href = 'index.html';
+      }
+    }
+
+    searchBtn.addEventListener('click', performSearch);
+    searchInput.addEventListener('keyup', function(e) {
+      if (e.key === 'Enter') {
+        performSearch();
+      }
+    });
+
+    // ---------- SMOOTH SCROLL FOR HASH LINKS (within page) ----------
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const targetEl = document.querySelector(targetId);
+        if (targetEl) {
+          e.preventDefault();
+          targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+  })();
+</script>
+
+</body>
+</html>

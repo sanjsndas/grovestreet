@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookies Policy · Grove Street Architecture</title>
+  <meta name="description" content="Cookies Policy for Grove Street Architecture — how we use cookies and similar technologies on our website.">
+  <link rel="canonical" href="https://grovestreetarchitecture.com/cookies.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cookies Policy · Grove Street Architecture">
+  <meta property="og:description" content="Learn how Grove Street Architecture uses cookies and how you can manage them.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://grovestreetarchitecture.com/cookies.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Cookies Policy",
+    "url": "https://grovestreetarchitecture.com/cookies.html",
+    "description": "Cookies Policy for Grove Street Architecture.",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Grove Street Architecture",
+      "email": "hello@grovestreetarchitecture.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "London",
+        "addressCountry": "UK"
+      }
+    }
+  }
+  </script>
+  <style>
+    /* ---------- RESET & VARIABLES (identical to main site) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #faf9f7;
+      --surface: #ffffff;
+      --ink: #1e1e1e;
+      --ink-soft: #3d3d3d;
+      --muted: #6b6b6b;
+      --border: #e2e0dc;
+      --accent: #b45f3b;      /* terracotta */
+      --accent-soft: #f0e6e1;
+      --serif: 'Georgia', 'Times New Roman', Times, serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1280px;
+      --content-width: 720px;
+      --radius: 4px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.6rem;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      margin: 2.2rem 0 1rem;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      margin: 1.8rem 0 0.6rem;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      color: var(--ink-soft);
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ---------- HEADER (identical to main site) ---------- */
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(6px);
+      background: rgba(255,255,255,0.92);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+
+    .logo span {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-left: 8px;
+    }
+
+    .logo .dot {
+      color: var(--accent);
+      font-size: 1.8rem;
+      line-height: 0;
+      margin-left: 2px;
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 28px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--ink-soft);
+    }
+
+    .main-nav a {
+      color: var(--ink-soft);
+      padding: 4px 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      font-size: 1.4rem;
+      padding: 6px 12px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      color: var(--ink);
+    }
+
+    /* ---------- SEARCH BAR (same as main) ---------- */
+    .search-section {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+
+    .search-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      max-width: 560px;
+    }
+
+    .search-wrap input {
+      flex: 1;
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-family: var(--sans);
+      font-size: 0.95rem;
+      background: var(--bg);
+      color: var(--ink);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    .search-wrap input:focus {
+      border-color: var(--accent);
+    }
+
+    .search-wrap button {
+      padding: 12px 22px;
+      background: var(--ink);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius);
+      font-family: var(--sans);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .search-wrap button:hover {
+      background: var(--accent);
+    }
+
+    /* ---------- COOKIES PAGE SPECIFIC ---------- */
+    .cookies-page {
+      max-width: var(--content-width);
+      margin: 0 auto;
+      padding: 48px 0 60px;
+    }
+
+    .cookies-page h1 {
+      font-size: 2.6rem;
+      margin-bottom: 8px;
+    }
+
+    .cookies-page .subhead {
+      font-size: 1.15rem;
+      color: var(--muted);
+      margin-bottom: 36px;
+      font-family: var(--sans);
+      line-height: 1.5;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+    }
+
+    .cookies-page h2 {
+      font-size: 1.5rem;
+      margin: 2.2rem 0 0.8rem;
+      font-family: var(--serif);
+      font-weight: 500;
+    }
+
+    .cookies-page h3 {
+      font-size: 1.15rem;
+      margin: 1.6rem 0 0.4rem;
+      font-family: var(--sans);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--ink);
+    }
+
+    .cookies-page p {
+      font-size: 0.98rem;
+      margin-bottom: 1.2rem;
+      color: var(--ink-soft);
+    }
+
+    .cookies-page ul {
+      margin: 0 0 1.4rem 1.6rem;
+      padding: 0;
+    }
+
+    .cookies-page li {
+      font-size: 0.98rem;
+      color: var(--ink-soft);
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+
+    .cookies-page li strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .cookies-page a {
+      color: var(--accent);
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    .cookies-page a:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    .cookies-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      font-size: 0.88rem;
+      color: var(--muted);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 22px;
+      margin: 28px 0 36px;
+    }
+
+    .cookies-meta span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cookies-meta strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .cookies-toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px 26px;
+      margin: 0 0 40px;
+    }
+
+    .cookies-toc h4 {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .cookies-toc ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      columns: 2;
+      column-gap: 32px;
+    }
+
+    .cookies-toc li {
+      margin-bottom: 8px;
+      font-size: 0.92rem;
+    }
+
+    .cookies-toc a {
+      color: var(--ink-soft);
+      border-bottom: none;
+    }
+
+    .cookies-toc a:hover {
+      color: var(--accent);
+      border-bottom: none;
+    }
+
+    /* cookie table */
+    .cookie-table-wrap {
+      overflow-x: auto;
+      margin: 20px 0 28px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+
+    .cookie-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      min-width: 600px;
+    }
+
+    .cookie-table th {
+      background: #f4f2ef;
+      color: var(--ink);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .cookie-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      color: var(--ink-soft);
+      vertical-align: top;
+    }
+
+    .cookie-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .cookie-table td strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 2px 8px;
+      border-radius: 12px;
+      white-space: nowrap;
+    }
+
+    .cookies-contact-box {
+      background: var(--accent-soft);
+      border-left: 3px solid var(--accent);
+      padding: 22px 26px;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin: 32px 0 0;
+    }
+
+    .cookies-contact-box p {
+      margin-bottom: 6px;
+      font-size: 0.95rem;
+    }
+
+    .cookies-contact-box strong {
+      color: var(--ink);
+    }
+
+    /* ---------- FOOTER (same as main) ---------- */
+    .site-footer {
+      background: var(--ink);
+      color: #d4d4d4;
+      padding: 48px 0 28px;
+      margin-top: 40px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 36px;
+    }
+
+    .footer-grid h4 {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #fff;
+      margin-bottom: 18px;
+    }
+
+    .footer-grid p {
+      font-size: 0.88rem;
+      color: #b0b0b0;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .footer-grid ul {
+      list-style: none;
+    }
+
+    .footer-grid li {
+      margin-bottom: 10px;
+    }
+
+    .footer-grid a {
+      color: #b0b0b0;
+      font-size: 0.88rem;
+    }
+
+    .footer-grid a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #333;
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.78rem;
+      color: #888;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      .cookies-page h1 { font-size: 2rem; }
+      .cookies-toc ul { columns: 1; }
+      .main-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--surface);
+        padding: 20px 24px;
+        border-bottom: 1px solid var(--border);
+        gap: 16px;
+      }
+      .main-nav.open { display: flex; }
+      .menu-toggle { display: block; }
+      .header-inner { position: relative; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .search-wrap { flex-direction: column; align-items: stretch; }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 0 16px; }
+      .cookies-meta { flex-direction: column; gap: 8px; }
+      .cookies-contact-box { padding: 18px 16px; }
+    }
+
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      Grove Street <span>Architecture</span><span class="dot">.</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">Terms Of Privacy</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="cookies.html" class="active">Cookies Policy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="categories.html">Categories</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ========== SEARCH (consistent with main) ========== -->
+<div class="search-section">
+  <div class="container">
+    <div class="search-wrap">
+      <input type="text" id="searchInput" placeholder="Search articles, topics, guides…" aria-label="Search articles">
+      <button id="searchBtn">Search</button>
+    </div>
+  </div>
+</div>
+
+<!-- ========== COOKIES MAIN ========== -->
+<main class="container" id="cookies">
+  <div class="cookies-page">
+
+    <h1>Cookies Policy</h1>
+    <p class="subhead">How Grove Street Architecture uses cookies and similar technologies to improve your experience on our website.</p>
+
+    <div class="cookies-meta">
+      <span><strong>Effective:</strong> 1 January 2025</span>
+      <span><strong>Last updated:</strong> 15 March 2025</span>
+      <span><strong>Version:</strong> 1.8</span>
+    </div>
+
+    <!-- Table of contents -->
+    <div class="cookies-toc">
+      <h4>On this page</h4>
+      <ul>
+        <li><a href="#section-1">1. What are cookies?</a></li>
+        <li><a href="#section-2">2. How we use cookies</a></li>
+        <li><a href="#section-3">3. Types of cookies we use</a></li>
+        <li><a href="#section-4">4. Third-party cookies</a></li>
+        <li><a href="#section-5">5. Managing your cookie preferences</a></li>
+        <li><a href="#section-6">6. Browser-specific instructions</a></li>
+        <li><a href="#section-7">7. Do Not Track signals</a></li>
+        <li><a href="#section-8">8. Changes to this policy</a></li>
+        <li><a href="#section-9">9. Contact us</a></li>
+      </ul>
+    </div>
+
+    <!-- 1 -->
+    <h2 id="section-1">1. What are cookies?</h2>
+    <p>Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently, to provide a better browsing experience, and to give website owners information about how their site is being used.</p>
+    <p>Cookies do not typically contain any information that personally identifies a user, but personal information that we store about you may be linked to the information stored in and obtained from cookies. For more information about how we handle your personal data, please see our <a href="privacy.html">Privacy Policy</a>.</p>
+    <p>We also use similar technologies such as web beacons, pixels, and local storage. In this policy, we refer to all of these technologies as "cookies" for simplicity.</p>
+
+    <!-- 2 -->
+    <h2 id="section-2">2. How we use cookies</h2>
+    <p>We use cookies for the following purposes:</p>
+    <ul>
+      <li><strong>To make the Site work:</strong> Some cookies are essential for the proper functioning of the website, such as remembering your cookie preferences and enabling basic navigation.</li>
+      <li><strong>To improve performance:</strong> We use analytics cookies to understand how visitors interact with the Site — which pages are most popular, how long visitors stay, and how they arrived at the Site. This helps us improve our content and user experience.</li>
+      <li><strong>To remember your preferences:</strong> We use cookies to remember settings you have chosen, such as your preferred language or display options.</li>
+      <li><strong>To support editorial features:</strong> Some cookies help us understand which articles are being read and shared, allowing us to tailor our editorial calendar.</li>
+    </ul>
+    <p>We do not use cookies for targeted advertising, and we do not sell any data collected through cookies to third parties.</p>
+
+    <!-- 3 -->
+    <h2 id="section-3">3. Types of cookies we use</h2>
+    <p>The table below lists the specific cookies we use on the Site, their purpose, and their duration.</p>
+
+    <div class="cookie-table-wrap">
+      <table class="cookie-table">
+        <thead>
+          <tr>
+            <th>Cookie name</th>
+            <th>Type</th>
+            <th>Purpose</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>cookie_consent</strong></td>
+            <td><span class="badge">Essential</span></td>
+            <td>Stores your cookie consent preferences so we don't ask you again on every visit.</td>
+            <td>1 year</td>
+          </tr>
+          <tr>
+            <td><strong>session_id</strong></td>
+            <td><span class="badge">Essential</span></td>
+            <td>Maintains your session while browsing the Site, enabling basic functionality.</td>
+            <td>Session</td>
+          </tr>
+          <tr>
+            <td><strong>_ga</strong></td>
+            <td><span class="badge">Analytics</span></td>
+            <td>Used by Google Analytics to distinguish unique users and track page views.</td>
+            <td>2 years</td>
+          </tr>
+          <tr>
+            <td><strong>_ga_*</strong></td>
+            <td><span class="badge">Analytics</span></td>
+            <td>Used by Google Analytics to persist session state and measure usage patterns.</td>
+            <td>2 years</td>
+          </tr>
+          <tr>
+            <td><strong>pref_theme</strong></td>
+            <td><span class="badge">Preference</span></td>
+            <td>Remembers your display preferences (e.g., light or dark reading mode).</td>
+            <td>6 months</td>
+          </tr>
+          <tr>
+            <td><strong>newsletter_ref</strong></td>
+            <td><span class="badge">Preference</span></td>
+            <td>Records if you arrived via a newsletter link, to help us measure engagement.</td>
+            <td>30 days</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>We only set analytics and preference cookies with your consent. Essential cookies are set automatically because they are strictly necessary for the Site to function.</p>
+
+    <!-- 4 -->
+    <h2 id="section-4">4. Third-party cookies</h2>
+    <p>In some cases, we use third-party service providers who may also set cookies on your device when you visit our Site. These include:</p>
+    <ul>
+      <li><strong>Google Analytics:</strong> We use Google Analytics to collect aggregated, anonymized data about how visitors use the Site. Google may set cookies such as <code>_ga</code> and <code>_ga_*</code>. For more information, see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+      <li><strong>Email delivery providers:</strong> If you subscribe to our newsletter, our email service provider may use tracking pixels to measure open rates and click-through rates. These are only activated when you open our emails.</li>
+    </ul>
+    <p>We do not control third-party cookies. You should check the relevant third party's website for more information about their cookie practices.</p>
+
+    <!-- 5 -->
+    <h2 id="section-5">5. Managing your cookie preferences</h2>
+    <p>You have several options for managing cookies:</p>
+    <ul>
+      <li><strong>Our cookie consent tool:</strong> When you first visit the Site, you will be presented with a cookie banner where you can accept or decline non-essential cookies. You can change your preferences at any time by clicking the "Cookie Settings" link in the footer.</li>
+      <li><strong>Browser settings:</strong> Most web browsers allow you to control cookies through their settings. You can set your browser to refuse cookies or to alert you when cookies are being sent. However, if you disable cookies, some parts of the Site may not function properly.</li>
+      <li><strong>Opt-out tools:</strong> For analytics cookies, you can install the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a>.</li>
+    </ul>
+
+    <!-- 6 -->
+    <h2 id="section-6">6. Browser-specific instructions</h2>
+    <p>To manage cookies in your specific browser, please follow the links below:</p>
+    <ul>
+      <li><strong>Google Chrome:</strong> <a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener">Clear, enable, and manage cookies in Chrome</a></li>
+      <li><strong>Mozilla Firefox:</strong> <a href="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop" target="_blank" rel="noopener">Enhanced tracking protection in Firefox</a></li>
+      <li><strong>Safari:</strong> <a href="https://support.apple.com/guide/safari/manage-cookies-sfri11471/mac" target="_blank" rel="noopener">Manage cookies and website data in Safari</a></li>
+      <li><strong>Microsoft Edge:</strong> <a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener">Delete cookies in Microsoft Edge</a></li>
+      <li><strong>Opera:</strong> <a href="https://help.opera.com/en/latest/security-and-privacy/" target="_blank" rel="noopener">Security and privacy settings in Opera</a></li>
+    </ul>
+
+    <!-- 7 -->
+    <h2 id="section-7">7. Do Not Track signals</h2>
+    <p>Some browsers have a "Do Not Track" (DNT) feature that sends a signal to websites indicating that you do not want to be tracked. We respect DNT signals. When your browser sends a DNT signal, we will not set analytics or preference cookies. Essential cookies that are strictly necessary for the Site to function will still be set.</p>
+    <p>Please note that our third-party service providers may not honor DNT signals, as there is currently no common industry standard for how to interpret them.</p>
+
+    <!-- 8 -->
+    <h2 id="section-8">8. Changes to this policy</h2>
+    <p>We may update this Cookies Policy from time to time to reflect changes in technology, legislation, or our data practices. When we make material changes, we will notify you by:</p>
+    <ul>
+      <li>Posting a prominent notice on the Site.</li>
+      <li>Updating the "Last updated" date at the top of this page.</li>
+      <li>Where appropriate, requesting your renewed consent for non-essential cookies.</li>
+    </ul>
+    <p>We encourage you to review this Cookies Policy periodically to stay informed about how we use cookies.</p>
+
+    <!-- 9 -->
+    <h2 id="section-9">9. Contact us</h2>
+    <p>If you have any questions about this Cookies Policy or our use of cookies, please contact us:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:privacy@grovestreetarchitecture.com">privacy@grovestreetarchitecture.com</a></li>
+      <li><strong>Postal:</strong> Grove Street Architecture, 12 Grove Street, London, E15 1AB, United Kingdom</li>
+    </ul>
+
+    <div class="cookies-contact-box">
+      <p><strong>Data Protection Officer</strong></p>
+      <p>For formal inquiries regarding cookies and data protection, you may also contact our Data Protection Officer at <a href="mailto:dpo@grovestreetarchitecture.com">dpo@grovestreetarchitecture.com</a>.</p>
+    </div>
+
+  </div>
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Grove Street Architecture</h4>
+        <p>Independent editorial on interior design, architecture, and the art of living well. Published since 2019.</p>
+        <p style="margin-top:16px; font-size:0.78rem; color:#777;">© 2025 Grove Street Architecture. All rights reserved.</p>
+      </div>
+      <div>
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="index.html#interior-design">Interior Design</a></li>
+          <li><a href="index.html#architecture">Architecture</a></li>
+          <li><a href="index.html#materials">Materials</a></li>
+          <li><a href="index.html#lighting">Lighting</a></li>
+          <li><a href="index.html#modern-homes">Modern Homes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Information</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Made with care in London.</span>
+      <span>ISSN 2634-912X</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script>
+  (function() {
+    'use strict';
+
+    // ---------- MOBILE MENU ----------
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+    menuToggle.addEventListener('click', function() {
+      mainNav.classList.toggle('open');
+    });
+
+    mainNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('open');
+      });
+    });
+
+    // ---------- SEARCH (basic redirect to home with query) ----------
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+
+    function performSearch() {
+      const query = searchInput.value.trim();
+      if (query) {
+        window.location.href = 'index.html?search=' + encodeURIComponent(query);
+      } else {
+        window.location.href = 'index.html';
+      }
+    }
+
+    searchBtn.addEventListener('click', performSearch);
+    searchInput.addEventListener('keyup', function(e) {
+      if (e.key === 'Enter') {
+        performSearch();
+      }
+    });
+
+    // ---------- SMOOTH SCROLL FOR HASH LINKS (within page) ----------
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const targetEl = document.querySelector(targetId);
+        if (targetEl) {
+          e.preventDefault();
+          targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+  })();
+</script>
+
+</body>
+</html>

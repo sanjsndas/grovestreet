@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories · Grove Street Architecture</title>
+  <meta name="description" content="Browse all categories on Grove Street Architecture — interior design, architecture, materials, lighting, and modern homes.">
+  <link rel="canonical" href="https://grovestreetarchitecture.com/categories.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Categories · Grove Street Architecture">
+  <meta property="og:description" content="Browse all categories on Grove Street Architecture.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://grovestreetarchitecture.com/categories.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Categories",
+    "url": "https://grovestreetarchitecture.com/categories.html",
+    "description": "Browse all categories on Grove Street Architecture.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Grove Street Architecture",
+      "url": "https://grovestreetarchitecture.com"
+    }
+  }
+  </script>
+  <style>
+    /* ---------- RESET & VARIABLES ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #faf9f7;
+      --surface: #ffffff;
+      --ink: #1e1e1e;
+      --ink-soft: #3d3d3d;
+      --muted: #6b6b6b;
+      --border: #e2e0dc;
+      --accent: #b45f3b;      /* terracotta */
+      --accent-soft: #f0e6e1;
+      --serif: 'Georgia', 'Times New Roman', Times, serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1280px;
+      --content-width: 800px;
+      --radius: 4px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.04);
+      --shadow-hover: 0 12px 28px rgba(0,0,0,0.08);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.6rem;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      margin: 2.2rem 0 1rem;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      margin: 1.8rem 0 0.6rem;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      color: var(--ink-soft);
+    }
+
+    ul, ol {
+      margin: 0 0 1.2rem 1.5rem;
+      color: var(--ink-soft);
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(6px);
+      background: rgba(255,255,255,0.92);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+
+    .logo span {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-left: 8px;
+    }
+
+    .logo .dot {
+      color: var(--accent);
+      font-size: 1.8rem;
+      line-height: 0;
+      margin-left: 2px;
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 28px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--ink-soft);
+    }
+
+    .main-nav a {
+      color: var(--ink-soft);
+      padding: 4px 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      font-size: 1.4rem;
+      padding: 6px 12px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      color: var(--ink);
+    }
+
+    /* ---------- CATEGORIES PAGE SPECIFIC ---------- */
+    .page-hero {
+      padding: 60px 0 36px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 48px;
+      text-align: center;
+    }
+
+    .page-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 12px;
+    }
+
+    .page-hero p {
+      font-size: 1.15rem;
+      max-width: 640px;
+      margin: 0 auto;
+      color: var(--ink-soft);
+    }
+
+    /* Category Grid */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-bottom: 20px;
+    }
+
+    .category-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .category-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+      border-color: #d0ccc6;
+    }
+
+    .category-card .card-image {
+      position: relative;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      background: #eee;
+    }
+
+    .category-card .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .category-card:hover .card-image img {
+      transform: scale(1.04);
+    }
+
+    .category-card .card-image .count-badge {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(30,30,30,0.75);
+      backdrop-filter: blur(4px);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 600;
+      font-family: var(--sans);
+      letter-spacing: 0.04em;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+
+    .category-card .card-body {
+      padding: 22px 22px 26px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .category-card .card-body h3 {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin: 0 0 8px;
+      letter-spacing: -0.01em;
+    }
+
+    .category-card .card-body p {
+      font-size: 0.92rem;
+      color: var(--muted);
+      margin: 0 0 16px;
+      line-height: 1.55;
+      flex: 1;
+    }
+
+    .category-card .card-body .card-link {
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: gap 0.2s, color 0.15s;
+    }
+
+    .category-card .card-body .card-link:hover {
+      gap: 10px;
+      color: var(--ink);
+    }
+
+    .category-card .card-body .card-link .arrow {
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+
+    /* Featured category (first one) */
+    .category-card.featured {
+      grid-column: span 2;
+      flex-direction: row;
+    }
+
+    .category-card.featured .card-image {
+      flex: 1.2;
+      aspect-ratio: auto;
+      min-height: 280px;
+    }
+
+    .category-card.featured .card-body {
+      flex: 0.8;
+      justify-content: center;
+      padding: 36px 32px;
+    }
+
+    .category-card.featured .card-body h3 {
+      font-size: 2rem;
+    }
+
+    .category-card.featured .card-body p {
+      font-size: 1rem;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: var(--ink);
+      color: #d4d4d4;
+      padding: 48px 0 28px;
+      margin-top: 60px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 36px;
+    }
+
+    .footer-grid h4 {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #fff;
+      margin-bottom: 18px;
+    }
+
+    .footer-grid p {
+      font-size: 0.88rem;
+      color: #b0b0b0;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .footer-grid ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer-grid li {
+      margin-bottom: 10px;
+    }
+
+    .footer-grid a {
+      color: #b0b0b0;
+      font-size: 0.88rem;
+      text-decoration: none;
+    }
+
+    .footer-grid a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #333;
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.78rem;
+      color: #888;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1100px) {
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .category-card.featured {
+        grid-column: span 2;
+      }
+      .category-card.featured .card-body h3 {
+        font-size: 1.7rem;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .page-hero h1 {
+        font-size: 2.4rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      .main-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--surface);
+        padding: 20px 24px;
+        border-bottom: 1px solid var(--border);
+        gap: 16px;
+      }
+      .main-nav.open { display: flex; }
+      .menu-toggle { display: block; }
+      .header-inner { position: relative; }
+      .page-hero h1 { font-size: 2rem; }
+      .page-hero p { font-size: 1rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+
+      .category-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .category-card.featured {
+        grid-column: span 1;
+        flex-direction: column;
+      }
+      .category-card.featured .card-image {
+        flex: none;
+        aspect-ratio: 4 / 3;
+        min-height: auto;
+      }
+      .category-card.featured .card-body {
+        padding: 22px 22px 26px;
+      }
+      .category-card.featured .card-body h3 {
+        font-size: 1.4rem;
+      }
+      .category-card.featured .card-body p {
+        font-size: 0.92rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 0 16px; }
+      .page-hero { padding: 40px 0 28px; }
+      .category-card .card-body {
+        padding: 18px 18px 22px;
+      }
+    }
+
+    /* ---------- UTILITIES ---------- */
+    .hidden { display: none !important; }
+    .text-center { text-align: center; }
+  </style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      Grove Street <span>Architecture</span><span class="dot">.</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html">Terms Of Privacy</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="cookies.html">Cookies Policy</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+      <li><a href="categories.html" class="active">Categories</a></li>
+    </nav>
+  </div>
+</header>
+
+<!-- ========== MAIN CONTENT ========== -->
+<main class="container">
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <h1>Categories</h1>
+    <p>Explore our editorial sections — from interior design and architecture to materials, lighting, and the nuances of modern living.</p>
+  </section>
+
+  <!-- Category Grid -->
+  <div class="category-grid">
+
+    <!-- Featured category (Interior Design) -->
+    <a href="index.html" class="category-card featured">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=900&h=600&fit=crop" alt="Interior Design" loading="lazy">
+        <span class="count-badge">24 articles</span>
+      </div>
+      <div class="card-body">
+        <h3>Interior Design</h3>
+        <p>Curated interiors, styling principles, and the quiet details that make a room feel complete — from colour palettes to bespoke joinery.</p>
+        <span class="card-link">Browse category <span class="arrow">→</span></span>
+      </div>
+    </a>
+
+    <!-- Architecture -->
+    <a href="index.html" class="category-card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=450&fit=crop" alt="Architecture" loading="lazy">
+        <span class="count-badge">18 articles</span>
+      </div>
+      <div class="card-body">
+        <h3>Architecture</h3>
+        <p>Built form, spatial theory, and the structures that shape how we live — from residential masterpieces to civic landmarks.</p>
+        <span class="card-link">Browse category <span class="arrow">→</span></span>
+      </div>
+    </a>
+
+    <!-- Materials -->
+    <a href="index.html" class="category-card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=450&fit=crop" alt="Materials" loading="lazy">
+        <span class="count-badge">15 articles</span>
+      </div>
+      <div class="card-body">
+        <h3>Materials</h3>
+        <p>Stone, timber, brass, lime plaster — the tactile palette of architecture and how honest materials age with grace.</p>
+        <span class="card-link">Browse category <span class="arrow">→</span></span>
+      </div>
+    </a>
+
+    <!-- Lighting -->
+    <a href="index.html" class="category-card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=600&h=450&fit=crop" alt="Lighting" loading="lazy">
+        <span class="count-badge">12 articles</span>
+      </div>
+      <div class="card-body">
+        <h3>Lighting</h3>
+        <p>Natural light, layered artificial schemes, and the fixtures that turn a space from merely functional to quietly atmospheric.</p>
+        <span class="card-link">Browse category <span class="arrow">→</span></span>
+      </div>
+    </a>
+
+    <!-- Modern Homes -->
+    <a href="index.html" class="category-card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=450&fit=crop" alt="Modern Homes" loading="lazy">
+        <span class="count-badge">21 articles</span>
+      </div>
+      <div class="card-body">
+        <h3>Modern Homes</h3>
+        <p>Contemporary residential design — open plans, indoor-outdoor living, and the new vernacular of the modern family home.</p>
+        <span class="card-link">Browse category <span class="arrow">→</span></span>
+      </div>
+    </a>
+
+    <!-- Sustainability (extra) -->
+    <a href="index.html" class="category-card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=600&h=450&fit=crop" alt="Sustainability" loading="lazy">
+        <span class="count-badge">9 articles</span>
+      </div>
+      <div class="card-body">
+        <h3>Sustainability</h3>
+        <p>Passive design, low-carbon materials, and the responsibility of building well for a warming planet.</p>
+        <span class="card-link">Browse category <span class="arrow">→</span></span>
+      </div>
+    </a>
+
+    <!-- Profiles (extra) -->
+    <a href="index.html" class="category-card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=450&fit=crop" alt="Profiles" loading="lazy">
+        <span class="count-badge">7 articles</span>
+      </div>
+      <div class="card-body">
+        <h3>Profiles</h3>
+        <p>Conversations with architects, designers, and makers — the people shaping the built environment today.</p>
+        <span class="card-link">Browse category <span class="arrow">→</span></span>
+      </div>
+    </a>
+
+    <!-- Travel (extra) -->
+    <a href="index.html" class="category-card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&h=450&fit=crop" alt="Travel" loading="lazy">
+        <span class="count-badge">11 articles</span>
+      </div>
+      <div class="card-body">
+        <h3>Travel</h3>
+        <p>Architectural journeys — from the basilicas of Italy to the brutalist housing estates of eastern Europe.</p>
+        <span class="card-link">Browse category <span class="arrow">→</span></span>
+      </div>
+    </a>
+
+    <!-- Product Reviews (extra) -->
+    <a href="index.html" class="category-card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&h=450&fit=crop" alt="Product Reviews" loading="lazy">
+        <span class="count-badge">6 articles</span>
+      </div>
+      <div class="card-body">
+        <h3>Product Reviews</h3>
+        <p>Independent, unsponsored reviews of furniture, fittings, and finishes we actually use and admire.</p>
+        <span class="card-link">Browse category <span class="arrow">→</span></span>
+      </div>
+    </a>
+
+  </div>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Grove Street Architecture</h4>
+        <p>Independent editorial on interior design, architecture, and the art of living well. Published since 2019.</p>
+        <p style="margin-top:16px; font-size:0.78rem; color:#777;">© 2025 Grove Street Architecture. All rights reserved.</p>
+      </div>
+      <div>
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="index.html">Interior Design</a></li>
+          <li><a href="index.html">Architecture</a></li>
+          <li><a href="index.html">Materials</a></li>
+          <li><a href="index.html">Lighting</a></li>
+          <li><a href="index.html">Modern Homes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Information</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Made with care in London.</span>
+      <span>ISSN 2634-912X</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script>
+  (function() {
+    'use strict';
+
+    // ---------- MOBILE MENU ----------
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+    menuToggle.addEventListener('click', function() {
+      mainNav.classList.toggle('open');
+    });
+
+    // Close menu when a nav link is clicked
+    mainNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('open');
+      });
+    });
+
+    // ---------- SMOOTH SCROLL FOR HASH LINKS ----------
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const targetEl = document.querySelector(targetId);
+        if (targetEl) {
+          e.preventDefault();
+          targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+  })();
+</script>
+
+</body>
+</html>

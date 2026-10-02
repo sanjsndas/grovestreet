@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disclaimer · Grove Street Architecture</title>
+  <meta name="description" content="Disclaimer for Grove Street Architecture — important information about the content and use of our website.">
+  <link rel="canonical" href="https://grovestreetarchitecture.com/disclaimer.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Disclaimer · Grove Street Architecture">
+  <meta property="og:description" content="Important information about the content and use of Grove Street Architecture's website.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://grovestreetarchitecture.com/disclaimer.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Disclaimer",
+    "url": "https://grovestreetarchitecture.com/disclaimer.html",
+    "description": "Disclaimer for Grove Street Architecture.",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Grove Street Architecture",
+      "email": "hello@grovestreetarchitecture.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "London",
+        "addressCountry": "UK"
+      }
+    }
+  }
+  </script>
+  <style>
+    /* ---------- RESET & VARIABLES (identical to main site) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #faf9f7;
+      --surface: #ffffff;
+      --ink: #1e1e1e;
+      --ink-soft: #3d3d3d;
+      --muted: #6b6b6b;
+      --border: #e2e0dc;
+      --accent: #b45f3b;      /* terracotta */
+      --accent-soft: #f0e6e1;
+      --serif: 'Georgia', 'Times New Roman', Times, serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1280px;
+      --content-width: 720px;
+      --radius: 4px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.6rem;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      margin: 2.2rem 0 1rem;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      margin: 1.8rem 0 0.6rem;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      color: var(--ink-soft);
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ---------- HEADER (identical to main site) ---------- */
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(6px);
+      background: rgba(255,255,255,0.92);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+
+    .logo span {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-left: 8px;
+    }
+
+    .logo .dot {
+      color: var(--accent);
+      font-size: 1.8rem;
+      line-height: 0;
+      margin-left: 2px;
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 28px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--ink-soft);
+    }
+
+    .main-nav a {
+      color: var(--ink-soft);
+      padding: 4px 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      font-size: 1.4rem;
+      padding: 6px 12px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      color: var(--ink);
+    }
+
+    /* ---------- SEARCH BAR (same as main) ---------- */
+    .search-section {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+
+    .search-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      max-width: 560px;
+    }
+
+    .search-wrap input {
+      flex: 1;
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-family: var(--sans);
+      font-size: 0.95rem;
+      background: var(--bg);
+      color: var(--ink);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    .search-wrap input:focus {
+      border-color: var(--accent);
+    }
+
+    .search-wrap button {
+      padding: 12px 22px;
+      background: var(--ink);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius);
+      font-family: var(--sans);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .search-wrap button:hover {
+      background: var(--accent);
+    }
+
+    /* ---------- DISCLAIMER PAGE SPECIFIC ---------- */
+    .disclaimer-page {
+      max-width: var(--content-width);
+      margin: 0 auto;
+      padding: 48px 0 60px;
+    }
+
+    .disclaimer-page h1 {
+      font-size: 2.6rem;
+      margin-bottom: 8px;
+    }
+
+    .disclaimer-page .subhead {
+      font-size: 1.15rem;
+      color: var(--muted);
+      margin-bottom: 36px;
+      font-family: var(--sans);
+      line-height: 1.5;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+    }
+
+    .disclaimer-page h2 {
+      font-size: 1.5rem;
+      margin: 2.2rem 0 0.8rem;
+      font-family: var(--serif);
+      font-weight: 500;
+    }
+
+    .disclaimer-page h3 {
+      font-size: 1.15rem;
+      margin: 1.6rem 0 0.4rem;
+      font-family: var(--sans);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--ink);
+    }
+
+    .disclaimer-page p {
+      font-size: 0.98rem;
+      margin-bottom: 1.2rem;
+      color: var(--ink-soft);
+    }
+
+    .disclaimer-page ul {
+      margin: 0 0 1.4rem 1.6rem;
+      padding: 0;
+    }
+
+    .disclaimer-page li {
+      font-size: 0.98rem;
+      color: var(--ink-soft);
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+
+    .disclaimer-page li strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .disclaimer-page a {
+      color: var(--accent);
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    .disclaimer-page a:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    .disclaimer-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      font-size: 0.88rem;
+      color: var(--muted);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 22px;
+      margin: 28px 0 36px;
+    }
+
+    .disclaimer-meta span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .disclaimer-meta strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .disclaimer-toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px 26px;
+      margin: 0 0 40px;
+    }
+
+    .disclaimer-toc h4 {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .disclaimer-toc ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      columns: 2;
+      column-gap: 32px;
+    }
+
+    .disclaimer-toc li {
+      margin-bottom: 8px;
+      font-size: 0.92rem;
+    }
+
+    .disclaimer-toc a {
+      color: var(--ink-soft);
+      border-bottom: none;
+    }
+
+    .disclaimer-toc a:hover {
+      color: var(--accent);
+      border-bottom: none;
+    }
+
+    .disclaimer-contact-box {
+      background: var(--accent-soft);
+      border-left: 3px solid var(--accent);
+      padding: 22px 26px;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin: 32px 0 0;
+    }
+
+    .disclaimer-contact-box p {
+      margin-bottom: 6px;
+      font-size: 0.95rem;
+    }
+
+    .disclaimer-contact-box strong {
+      color: var(--ink);
+    }
+
+    /* ---------- FOOTER (same as main) ---------- */
+    .site-footer {
+      background: var(--ink);
+      color: #d4d4d4;
+      padding: 48px 0 28px;
+      margin-top: 40px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 36px;
+    }
+
+    .footer-grid h4 {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #fff;
+      margin-bottom: 18px;
+    }
+
+    .footer-grid p {
+      font-size: 0.88rem;
+      color: #b0b0b0;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .footer-grid ul {
+      list-style: none;
+    }
+
+    .footer-grid li {
+      margin-bottom: 10px;
+    }
+
+    .footer-grid a {
+      color: #b0b0b0;
+      font-size: 0.88rem;
+    }
+
+    .footer-grid a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #333;
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.78rem;
+      color: #888;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      .disclaimer-page h1 { font-size: 2rem; }
+      .disclaimer-toc ul { columns: 1; }
+      .main-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--surface);
+        padding: 20px 24px;
+        border-bottom: 1px solid var(--border);
+        gap: 16px;
+      }
+      .main-nav.open { display: flex; }
+      .menu-toggle { display: block; }
+      .header-inner { position: relative; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .search-wrap { flex-direction: column; align-items: stretch; }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 0 16px; }
+      .disclaimer-meta { flex-direction: column; gap: 8px; }
+      .disclaimer-contact-box { padding: 18px 16px; }
+    }
+
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      Grove Street <span>Architecture</span><span class="dot">.</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">Terms Of Privacy</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="cookies.html">Cookies Policy</a>
+      <a href="disclaimer.html" class="active">Disclaimer</a>
+      <a href="categories.html">Categories</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ========== SEARCH (consistent with main) ========== -->
+<div class="search-section">
+  <div class="container">
+    <div class="search-wrap">
+      <input type="text" id="searchInput" placeholder="Search articles, topics, guides…" aria-label="Search articles">
+      <button id="searchBtn">Search</button>
+    </div>
+  </div>
+</div>
+
+<!-- ========== DISCLAIMER MAIN ========== -->
+<main class="container" id="disclaimer">
+  <div class="disclaimer-page">
+
+    <h1>Disclaimer</h1>
+    <p class="subhead">Important information about the content, accuracy, and use of Grove Street Architecture's website.</p>
+
+    <div class="disclaimer-meta">
+      <span><strong>Effective:</strong> 1 January 2025</span>
+      <span><strong>Last updated:</strong> 15 March 2025</span>
+      <span><strong>Version:</strong> 2.1</span>
+    </div>
+
+    <!-- Table of contents -->
+    <div class="disclaimer-toc">
+      <h4>On this page</h4>
+      <ul>
+        <li><a href="#section-1">1. General information</a></li>
+        <li><a href="#section-2">2. Accuracy of content</a></li>
+        <li><a href="#section-3">3. Professional advice</a></li>
+        <li><a href="#section-4">4. External links</a></li>
+        <li><a href="#section-5">5. Affiliate &amp; sponsorship</a></li>
+        <li><a href="#section-6">6. Copyright &amp; fair use</a></li>
+        <li><a href="#section-7">7. Limitation of liability</a></li>
+        <li><a href="#section-8">8. Changes to this disclaimer</a></li>
+        <li><a href="#section-9">9. Contact us</a></li>
+      </ul>
+    </div>
+
+    <!-- 1 -->
+    <h2 id="section-1">1. General information</h2>
+    <p>The information provided by Grove Street Architecture ("we," "us," or "our") on <a href="https://grovestreetarchitecture.com">grovestreetarchitecture.com</a> (the "Site") is for general informational and editorial purposes only. All information on the Site is provided in good faith, and we make every effort to ensure that the content we publish is accurate, current, and useful to our readers.</p>
+    <p>However, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, or completeness of any information on the Site. Under no circumstance shall we have any liability to you for any loss or damage of any kind incurred as a result of the use of the Site or reliance on any information provided on the Site. Your use of the Site and your reliance on any information on the Site is solely at your own risk.</p>
+    <p>This disclaimer should be read alongside our <a href="terms.html">Terms of Use</a>, <a href="privacy.html">Privacy Policy</a>, and <a href="cookies.html">Cookies Policy</a>.</p>
+
+    <!-- 2 -->
+    <h2 id="section-2">2. Accuracy of content</h2>
+    <p>Grove Street Architecture publishes articles, guides, and commentary on interior design, architecture, materials, lighting, and related topics. While we strive to keep our content up to date, the fields of architecture and design are constantly evolving. Building codes, regulations, materials, and best practices may change over time, and information that was accurate at the time of publication may become outdated.</p>
+    <p>We do not warrant that:</p>
+    <ul>
+      <li>Any information on the Site is complete, accurate, or current.</li>
+      <li>Any product, material, or technique referenced will perform as described or will be suitable for your specific project.</li>
+      <li>Any project photographs, illustrations, or case studies represent typical results.</li>
+    </ul>
+    <p>You should independently verify any information before relying on it for any purpose. If you notice an error or outdated information, please <a href="contact.html">contact us</a> so we can review and update it.</p>
+
+    <!-- 3 -->
+    <h2 id="section-3">3. Professional advice</h2>
+    <p>The content on this Site does not constitute professional architectural, engineering, legal, financial, or construction advice. You should not rely solely on the information on this Site as a substitute for professional advice tailored to your specific circumstances.</p>
+    <p>Before undertaking any building, renovation, or design project, you should:</p>
+    <ul>
+      <li><strong>Consult a licensed architect or structural engineer</strong> for advice specific to your project.</li>
+      <li><strong>Verify all building regulations and planning requirements</strong> with your local authority.</li>
+      <li><strong>Obtain appropriate insurance and permits</strong> before commencing work.</li>
+      <li><strong>Seek independent legal or financial advice</strong> where relevant.</li>
+    </ul>
+    <p>Any reliance you place on the information on this Site is strictly at your own risk. We are not responsible for any decisions, actions, or omissions taken based on the content of this Site.</p>
+
+    <!-- 4 -->
+    <h2 id="section-4">4. External links</h2>
+    <p>The Site may contain links to external websites that are not provided or maintained by, or in any way affiliated with, Grove Street Architecture. We do not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites.</p>
+    <p>External links are provided for convenience and informational purposes only. The inclusion of any link does not imply endorsement, approval, or control by Grove Street Architecture of the linked site, its operator, or its content. You access external sites at your own risk, and we encourage you to review the terms and privacy policies of any external site you visit.</p>
+
+    <!-- 5 -->
+    <h2 id="section-5">5. Affiliate &amp; sponsorship</h2>
+    <p>Grove Street Architecture may participate in affiliate marketing programmes, which means we may earn a commission if you click on certain links and make a purchase. This comes at no additional cost to you and helps support our editorial work.</p>
+    <p>We may also accept sponsored content, advertising, or product placements. When content is sponsored or contains affiliate links, we will clearly disclose this at the top of the relevant article or in the relevant section. Our editorial opinions remain our own, and we only recommend products or services we believe are relevant and useful to our readers.</p>
+    <p>We are not responsible for the quality, safety, or performance of any third-party products or services mentioned on the Site. Any transactions you enter into with third parties are solely between you and that third party.</p>
+
+    <!-- 6 -->
+    <h2 id="section-6">6. Copyright &amp; fair use</h2>
+    <p>All content on the Site — including text, photographs, illustrations, graphics, and logos — is the property of Grove Street Architecture or its licensors and is protected by copyright and other intellectual property laws.</p>
+    <p>You may view, download, and print content from the Site for your own personal, non-commercial use only, provided you do not modify the content and you retain all copyright and proprietary notices. Any other use — including reproduction, distribution, modification, or republication — is strictly prohibited without our prior written consent.</p>
+    <p>If you believe that any content on the Site infringes your copyright, please <a href="contact.html">contact us</a> with details, and we will investigate promptly.</p>
+
+    <!-- 7 -->
+    <h2 id="section-7">7. Limitation of liability</h2>
+    <p>To the fullest extent permitted by law, Grove Street Architecture, its owners, editors, contributors, and affiliates shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of or related to your use of the Site or reliance on any content published on it.</p>
+    <p>This includes, without limitation, any loss of profits, business interruption, loss of data, or damage to property, even if we have been advised of the possibility of such damages. Some jurisdictions do not allow the exclusion of certain warranties or the limitation of liability, so some of the above limitations may not apply to you.</p>
+    <p>We do not guarantee that the Site will be available uninterrupted, secure, or free from errors or viruses. You are responsible for implementing your own security measures.</p>
+
+    <!-- 8 -->
+    <h2 id="section-8">8. Changes to this disclaimer</h2>
+    <p>We may update this Disclaimer from time to time to reflect changes in our practices, technology, or legal requirements. When we make material changes, we will:</p>
+    <ul>
+      <li>Post a prominent notice on the Site.</li>
+      <li>Update the "Last updated" date at the top of this page.</li>
+      <li>Where appropriate, provide additional notice by email or other means.</li>
+    </ul>
+    <p>We encourage you to review this Disclaimer periodically to stay informed about the terms governing your use of the Site. Your continued use of the Site after any changes constitutes your acceptance of the updated Disclaimer.</p>
+
+    <!-- 9 -->
+    <h2 id="section-9">9. Contact us</h2>
+    <p>If you have any questions about this Disclaimer or the content on our Site, please contact us:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:legal@grovestreetarchitecture.com">legal@grovestreetarchitecture.com</a></li>
+      <li><strong>Postal:</strong> Grove Street Architecture, 12 Grove Street, London, E15 1AB, United Kingdom</li>
+    </ul>
+
+    <div class="disclaimer-contact-box">
+      <p><strong>Editorial Inquiries</strong></p>
+      <p>For editorial corrections, content suggestions, or press inquiries, please contact <a href="mailto:editorial@grovestreetarchitecture.com">editorial@grovestreetarchitecture.com</a>.</p>
+    </div>
+
+  </div>
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Grove Street Architecture</h4>
+        <p>Independent editorial on interior design, architecture, and the art of living well. Published since 2019.</p>
+        <p style="margin-top:16px; font-size:0.78rem; color:#777;">© 2025 Grove Street Architecture. All rights reserved.</p>
+      </div>
+      <div>
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="index.html#interior-design">Interior Design</a></li>
+          <li><a href="index.html#architecture">Architecture</a></li>
+          <li><a href="index.html#materials">Materials</a></li>
+          <li><a href="index.html#lighting">Lighting</a></li>
+          <li><a href="index.html#modern-homes">Modern Homes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Information</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Made with care in London.</span>
+      <span>ISSN 2634-912X</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script>
+  (function() {
+    'use strict';
+
+    // ---------- MOBILE MENU ----------
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+    menuToggle.addEventListener('click', function() {
+      mainNav.classList.toggle('open');
+    });
+
+    mainNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('open');
+      });
+    });
+
+    // ---------- SEARCH (basic redirect to home with query) ----------
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+
+    function performSearch() {
+      const query = searchInput.value.trim();
+      if (query) {
+        window.location.href = 'index.html?search=' + encodeURIComponent(query);
+      } else {
+        window.location.href = 'index.html';
+      }
+    }
+
+    searchBtn.addEventListener('click', performSearch);
+    searchInput.addEventListener('keyup', function(e) {
+      if (e.key === 'Enter') {
+        performSearch();
+      }
+    });
+
+    // ---------- SMOOTH SCROLL FOR HASH LINKS (within page) ----------
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const targetEl = document.querySelector(targetId);
+        if (targetEl) {
+          e.preventDefault();
+          targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+  })();
+</script>
+
+</body>
+</html>

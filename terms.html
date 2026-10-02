@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Use · Grove Street Architecture</title>
+  <meta name="description" content="Terms of Use for Grove Street Architecture — independent editorial on interior design, architecture, and the built environment.">
+  <link rel="canonical" href="https://grovestreetarchitecture.com/terms.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Terms of Use · Grove Street Architecture">
+  <meta property="og:description" content="Terms of Use for Grove Street Architecture.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://grovestreetarchitecture.com/terms.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Terms of Use",
+    "url": "https://grovestreetarchitecture.com/terms.html",
+    "description": "Terms of Use for Grove Street Architecture.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Grove Street Architecture",
+      "url": "https://grovestreetarchitecture.com"
+    }
+  }
+  </script>
+  <style>
+    /* ---------- RESET & VARIABLES ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #faf9f7;
+      --surface: #ffffff;
+      --ink: #1e1e1e;
+      --ink-soft: #3d3d3d;
+      --muted: #6b6b6b;
+      --border: #e2e0dc;
+      --accent: #b45f3b;      /* terracotta */
+      --accent-soft: #f0e6e1;
+      --serif: 'Georgia', 'Times New Roman', Times, serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1280px;
+      --content-width: 800px;
+      --radius: 4px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.6rem;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      margin: 2.2rem 0 1rem;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      margin: 1.8rem 0 0.6rem;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      color: var(--ink-soft);
+    }
+
+    ul, ol {
+      margin: 0 0 1.2rem 1.5rem;
+      color: var(--ink-soft);
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(6px);
+      background: rgba(255,255,255,0.92);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+
+    .logo span {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-left: 8px;
+    }
+
+    .logo .dot {
+      color: var(--accent);
+      font-size: 1.8rem;
+      line-height: 0;
+      margin-left: 2px;
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 28px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--ink-soft);
+    }
+
+    .main-nav a {
+      color: var(--ink-soft);
+      padding: 4px 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      font-size: 1.4rem;
+      padding: 6px 12px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      color: var(--ink);
+    }
+
+    /* ---------- TERMS PAGE SPECIFIC ---------- */
+    .page-hero {
+      padding: 60px 0 36px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .page-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 12px;
+    }
+
+    .page-hero p {
+      font-size: 1.15rem;
+      max-width: 640px;
+      margin: 0 auto;
+      color: var(--ink-soft);
+    }
+
+    .terms-content {
+      max-width: var(--content-width);
+      margin: 0 auto;
+      padding-bottom: 40px;
+    }
+
+    .terms-content h2 {
+      margin-top: 2.6rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .terms-content h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .terms-content h3 {
+      margin-top: 1.8rem;
+      font-family: var(--sans);
+      font-size: 1.05rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--ink);
+    }
+
+    .terms-content p,
+    .terms-content li {
+      font-size: 0.98rem;
+      color: var(--ink-soft);
+    }
+
+    .terms-content .last-updated {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+
+    .terms-content .highlight-box {
+      background: var(--surface);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 20px 24px;
+      margin: 24px 0;
+      box-shadow: var(--shadow);
+    }
+
+    .terms-content .highlight-box p {
+      margin-bottom: 0;
+      font-size: 0.95rem;
+    }
+
+    .terms-content a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .terms-content a:hover {
+      color: var(--ink);
+    }
+
+    .terms-content ul {
+      list-style: disc;
+      padding-left: 1.2rem;
+    }
+
+    .terms-content ol {
+      list-style: decimal;
+      padding-left: 1.4rem;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: var(--ink);
+      color: #d4d4d4;
+      padding: 48px 0 28px;
+      margin-top: 40px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 36px;
+    }
+
+    .footer-grid h4 {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #fff;
+      margin-bottom: 18px;
+    }
+
+    .footer-grid p {
+      font-size: 0.88rem;
+      color: #b0b0b0;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .footer-grid ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer-grid li {
+      margin-bottom: 10px;
+    }
+
+    .footer-grid a {
+      color: #b0b0b0;
+      font-size: 0.88rem;
+      text-decoration: none;
+    }
+
+    .footer-grid a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #333;
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.78rem;
+      color: #888;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .page-hero h1 {
+        font-size: 2.4rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      .main-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--surface);
+        padding: 20px 24px;
+        border-bottom: 1px solid var(--border);
+        gap: 16px;
+      }
+      .main-nav.open { display: flex; }
+      .menu-toggle { display: block; }
+      .header-inner { position: relative; }
+      .page-hero h1 { font-size: 2rem; }
+      .page-hero p { font-size: 1rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .terms-content h2 { font-size: 1.5rem; }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 0 16px; }
+      .page-hero { padding: 40px 0 28px; }
+    }
+
+    /* ---------- UTILITIES ---------- */
+    .hidden { display: none !important; }
+    .text-center { text-align: center; }
+  </style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      Grove Street <span>Architecture</span><span class="dot">.</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html" class="active">Terms Of Privacy</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="cookies.html">Cookies Policy</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+      <li><a href="categories.html">Categories</a></li>
+    </nav>
+  </div>
+</header>
+
+<!-- ========== MAIN CONTENT ========== -->
+<main class="container">
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <h1>Terms of Use</h1>
+    <p>Please read these terms carefully before using Grove Street Architecture. By accessing or using our website, you agree to be bound by these terms.</p>
+  </section>
+
+  <!-- Terms Content -->
+  <div class="terms-content">
+
+    <span class="last-updated">Last updated: 1 January 2025</span>
+
+    <p>Welcome to <strong>Grove Street Architecture</strong> ("we", "us", "our"). These Terms of Use ("Terms") govern your access to and use of the website located at <a href="https://grovestreetarchitecture.com">grovestreetarchitecture.com</a> (the "Site"), including any content, functionality, and services offered on or through the Site.</p>
+
+    <p>By accessing or using the Site, you confirm that you accept these Terms and agree to comply with them. If you do not agree to these Terms, you must not use the Site.</p>
+
+    <div class="highlight-box">
+      <p><strong>Summary:</strong> You may read, share, and link to our content for personal, non-commercial purposes. You may not republish, sell, or systematically copy our content without written permission. We are not liable for any decisions you make based on our editorial content.</p>
+    </div>
+
+    <h2>1. About Us</h2>
+    <p>Grove Street Architecture is an independent editorial publication providing articles, reviews, and commentary on interior design, architecture, materials, and the built environment. The Site is operated from London, United Kingdom.</p>
+    <p>You can contact us at <a href="mailto:hello@grovestreetarchitecture.com">hello@grovestreetarchitecture.com</a>.</p>
+
+    <h2>2. Eligibility</h2>
+    <p>By using the Site, you represent and warrant that you are at least 13 years of age (or the minimum legal age in your jurisdiction to access such content) and that you have the legal capacity to enter into these Terms. If you are using the Site on behalf of an organisation, you represent that you have the authority to bind that organisation to these Terms.</p>
+
+    <h2>3. Intellectual Property Rights</h2>
+    <p>Unless otherwise stated, all content on the Site — including but not limited to text, articles, photographs, illustrations, graphics, logos, and the design, selection, and arrangement thereof — is owned by or licensed to Grove Street Architecture and is protected by copyright, trademark, and other intellectual property laws.</p>
+
+    <h3>3.1 Permitted Use</h3>
+    <p>You may:</p>
+    <ul>
+      <li>View, read, and browse the Site for personal, non-commercial purposes.</li>
+      <li>Share links to our articles on social media or via email, provided the link directs to the original article on our Site.</li>
+      <li>Quote short excerpts of our content (up to 100 words) for the purposes of criticism, review, or commentary, provided you attribute the quote to Grove Street Architecture and link back to the original article.</li>
+      <li>Download or print one copy of pages from the Site for your personal, non-commercial reference.</li>
+    </ul>
+
+    <h3>3.2 Prohibited Use</h3>
+    <p>You may not:</p>
+    <ul>
+      <li>Republish, reproduce, distribute, or display any substantial portion of our content without our prior written permission.</li>
+      <li>Use our content for commercial purposes, including but not limited to selling, licensing, or monetising our content.</li>
+      <li>Systematically download, scrape, or harvest content from the Site (including through the use of bots, crawlers, or similar technologies).</li>
+      <li>Modify, adapt, translate, reverse-engineer, or create derivative works based on our content.</li>
+      <li>Remove or alter any copyright, trademark, or other proprietary notices from our content.</li>
+      <li>Use our name, logo, or branding without our prior written consent.</li>
+    </ul>
+    <p>To request permission for any use not permitted above, please contact <a href="mailto:hello@grovestreetarchitecture.com">hello@grovestreetarchitecture.com</a>.</p>
+
+    <h2>4. User Conduct</h2>
+    <p>When using the Site, you agree not to:</p>
+    <ul>
+      <li>Use the Site in any way that violates applicable local, national, or international laws or regulations.</li>
+      <li>Attempt to gain unauthorised access to any part of the Site, its servers, or any systems or networks connected to the Site.</li>
+      <li>Introduce any viruses, malware, or other harmful material to the Site.</li>
+      <li>Interfere with or disrupt the operation of the Site or the servers or networks used to make the Site available.</li>
+      <li>Use the Site to transmit unsolicited commercial communications (spam).</li>
+      <li>Impersonate Grove Street Architecture, its employees, or any other person or entity.</li>
+    </ul>
+
+    <h2>5. Newsletter and Communications</h2>
+    <p>If you subscribe to our newsletter, <em>The Grove Street Dispatch</em>, you consent to receive periodic email communications from us. You may unsubscribe at any time by clicking the unsubscribe link in any newsletter email or by contacting us at <a href="mailto:hello@grovestreetarchitecture.com">hello@grovestreetarchitecture.com</a>.</p>
+    <p>We will handle your email address and any other personal information in accordance with our <a href="privacy.html">Privacy Policy</a>.</p>
+
+    <h2>6. Third-Party Links and Content</h2>
+    <p>The Site may contain links to third-party websites, resources, or services. These links are provided for your convenience only. We do not control, endorse, or assume responsibility for the content, privacy policies, or practices of any third-party websites. You access third-party sites at your own risk and should review their terms and privacy policies.</p>
+
+    <h2>7. Editorial Independence and Accuracy</h2>
+    <p>Grove Street Architecture is an independent publication. We do not accept sponsored content or paid reviews. All articles are written by our editorial team and are published based on our genuine belief in their merit.</p>
+    <p>While we make every effort to ensure the accuracy of the information on the Site, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the information, products, services, or related graphics contained on the Site. Any reliance you place on such information is strictly at your own risk.</p>
+    <p>We are a design publication, not a professional architectural, engineering, or legal advisory service. The content on the Site does not constitute professional advice. You should consult a qualified professional before making any decisions based on the content of the Site.</p>
+
+    <h2>8. Limitation of Liability</h2>
+    <p>To the fullest extent permitted by law, Grove Street Architecture, its founders, editors, contributors, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, use, goodwill, or other intangible losses, resulting from:</p>
+    <ul>
+      <li>Your access to or use of, or inability to access or use, the Site.</li>
+      <li>Any conduct or content of any third party on the Site.</li>
+      <li>Any content obtained from the Site.</li>
+      <li>Unauthorised access, use, or alteration of your transmissions or content.</li>
+    </ul>
+    <p>Nothing in these Terms shall limit or exclude our liability for death or personal injury caused by our negligence, fraud or fraudulent misrepresentation, or any other liability that cannot be excluded or limited under applicable law.</p>
+
+    <h2>9. Indemnification</h2>
+    <p>You agree to indemnify, defend, and hold harmless Grove Street Architecture, its founders, editors, contributors, and affiliates from and against any and all claims, liabilities, damages, losses, costs, and expenses (including reasonable legal fees) arising out of or in any way connected with your violation of these Terms or your use of the Site.</p>
+
+    <h2>10. Changes to These Terms</h2>
+    <p>We reserve the right to modify or replace these Terms at any time at our sole discretion. If we make material changes, we will notify you by posting the updated Terms on this page with a new "Last updated" date. Your continued use of the Site after any such changes constitutes your acceptance of the new Terms.</p>
+    <p>We encourage you to review these Terms periodically to stay informed of any updates.</p>
+
+    <h2>11. Termination</h2>
+    <p>We reserve the right to terminate or suspend your access to the Site, without notice or liability, for any reason, including without limitation if you breach these Terms. Upon termination, your right to use the Site will immediately cease.</p>
+
+    <h2>12. Governing Law and Jurisdiction</h2>
+    <p>These Terms and any dispute or claim arising out of or in connection with them or their subject matter shall be governed by and construed in accordance with the laws of England and Wales.</p>
+    <p>You irrevocably agree that the courts of England and Wales shall have exclusive jurisdiction to settle any dispute or claim arising out of or in connection with these Terms or their subject matter.</p>
+
+    <h2>13. Severability</h2>
+    <p>If any provision of these Terms is held to be invalid, illegal, or unenforceable for any reason, such provision shall be eliminated or limited to the minimum extent necessary, and the remaining provisions of these Terms shall continue in full force and effect.</p>
+
+    <h2>14. Entire Agreement</h2>
+    <p>These Terms, together with our <a href="privacy.html">Privacy Policy</a> and <a href="cookies.html">Cookie Policy</a>, constitute the entire agreement between you and Grove Street Architecture regarding your use of the Site and supersede all prior and contemporaneous agreements, understandings, and representations.</p>
+
+    <h2>15. Contact Us</h2>
+    <p>If you have any questions about these Terms of Use, please contact us at:</p>
+    <p>
+      <strong>Grove Street Architecture</strong><br>
+      Grove Street, London, United Kingdom<br>
+      Email: <a href="mailto:hello@grovestreetarchitecture.com">hello@grovestreetarchitecture.com</a>
+    </p>
+
+  </div>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Grove Street Architecture</h4>
+        <p>Independent editorial on interior design, architecture, and the art of living well. Published since 2019.</p>
+        <p style="margin-top:16px; font-size:0.78rem; color:#777;">© 2025 Grove Street Architecture. All rights reserved.</p>
+      </div>
+      <div>
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="index.html">Interior Design</a></li>
+          <li><a href="index.html">Architecture</a></li>
+          <li><a href="index.html">Materials</a></li>
+          <li><a href="index.html">Lighting</a></li>
+          <li><a href="index.html">Modern Homes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Information</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Made with care in London.</span>
+      <span>ISSN 2634-912X</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script>
+  (function() {
+    'use strict';
+
+    // ---------- MOBILE MENU ----------
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+    menuToggle.addEventListener('click', function() {
+      mainNav.classList.toggle('open');
+    });
+
+    // Close menu when a nav link is clicked
+    mainNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('open');
+      });
+    });
+
+    // ---------- SMOOTH SCROLL FOR HASH LINKS ----------
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const targetEl = document.querySelector(targetId);
+        if (targetEl) {
+          e.preventDefault();
+          targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+  })();
+</script>
+
+</body>
+</html>
